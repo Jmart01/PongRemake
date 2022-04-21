@@ -2,10 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum BumperLoc
+{
+    Left,
+    Right
+};
+
 public class Ball : MonoBehaviour
 {
     public float speed = 5f;
-    float dir = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +20,18 @@ public class Ball : MonoBehaviour
         GetComponent<Rigidbody>().velocity = new Vector3(speed * sx, speed * sy, 0f);
     }
 
-    public void ChangeDir(float dir)
+    public void ChangeVelocity(BumperLoc bumperLoc)
     {
-        
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if(bumperLoc == BumperLoc.Left)
+        {
+            rb.AddForceAtPosition(transform.right* speed,transform.position,ForceMode.Force);
+        }
+        else
+        {
+            rb.AddForceAtPosition(-transform.right*speed,transform.position,ForceMode.Force);
+        }
+        speed+=10;
+        Debug.Log(speed);
     }
-   
 }
