@@ -15,16 +15,14 @@ public class InGameUI : MonoBehaviour
         Scorekeeper scoreKeeper = FindObjectOfType<Scorekeeper>().GetComponent<Scorekeeper>();
         scoreKeeper.onPlayer1ScoreChanged += ChangePlayer1Score;
         scoreKeeper.onPlayer2ScoreChanged += ChangePlayer2Score;
-        scoreKeeper.BroadcastPlayer1Score();
-        scoreKeeper.BroadcastPlayer2Score();
     }
 
-    private void ChangePlayer1Score(int newScore, int oldScore)
+    private void ChangePlayer1Score(int newScore)
     {
         player1ScoreText.text = newScore.ToString();
     }
 
-    private void ChangePlayer2Score(int newScore, int oldScore)
+    private void ChangePlayer2Score(int newScore)
     {
         player2ScoreText.text = newScore.ToString();
     }

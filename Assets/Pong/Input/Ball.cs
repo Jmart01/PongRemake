@@ -32,6 +32,5 @@ public class Ball : MonoBehaviour
             rb.AddForceAtPosition(-transform.right*speed,transform.position,ForceMode.Force);
         }
         speed+=10;
-        Debug.Log(speed);
     }
 }

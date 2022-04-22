@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5544043282067541318
+--- !u!1 &511552924522012970
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6239287426587041158}
-  - component: {fileID: 587445335737721200}
-  - component: {fileID: 6510793109030910116}
+  - component: {fileID: 1971516583608496403}
+  - component: {fileID: 8649665973657270521}
   m_Layer: 0
-  m_Name: Goal
+  m_Name: scoreKeeper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6239287426587041158
+--- !u!4 &1971516583608496403
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5544043282067541318}
+  m_GameObject: {fileID: 511552924522012970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,30 +32,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &587445335737721200
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5544043282067541318}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 15, z: 6}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6510793109030910116
+--- !u!114 &8649665973657270521
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5544043282067541318}
+  m_GameObject: {fileID: 511552924522012970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d8ffe64495b59c4ca6e4041174b9dc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 85ae0606530f94045b6f2f7426825696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bumperLoc: 0
-  scoreKeeper: {fileID: 8649665973657270521, guid: e6448c22245a4b64a82c538a1fabd7be, type: 3}
