@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] Bumper bumper1;
     [SerializeField] Bumper bumper2;
     [SerializeField] float moveSpeed;
+    [SerializeField] GameObject ballToRespawn;
     InputActions inputActions;
 
     private void Awake()
@@ -52,7 +53,10 @@ public class Player : MonoBehaviour
     private void MoveUpPlayerTwoUpdate(InputAction.CallbackContext obj)
     {
         bumper2.Move(obj.ReadValue<float>());
-        //when ball hits a collider, send the directional value from redirectball script to the ball
     }
 
+    internal void RespawnBall()
+    {
+        GameObject respawnBallClone = Instantiate(ballToRespawn, this.transform.position, Quaternion.identity);
+    }
 }

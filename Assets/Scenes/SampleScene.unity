@@ -869,6 +869,7 @@ MonoBehaviour:
   bumper1: {fileID: 872180039}
   bumper2: {fileID: 1963548139}
   moveSpeed: 5
+  ballToRespawn: {fileID: 5728677606950168718, guid: 7dc355bf51d7c3b4b81764229556721d, type: 3}
 --- !u!4 &1624611704
 Transform:
   m_ObjectHideFlags: 0
